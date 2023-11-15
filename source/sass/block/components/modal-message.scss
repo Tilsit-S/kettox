@@ -1,0 +1,84 @@
+.modal-message {
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 0;
+    width: 412px;
+    padding: 28px 5px 0 114px;
+    background: linear-gradient(97deg, #e04ded 2.92%, #fb4e9a 100%);
+    border-radius: 32px;
+    z-index: 3;
+
+    &.show {
+        display: block;
+    }
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 17px;
+        color: $white;
+    }
+
+    &__close {
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 18px;
+        top: 16px;
+        right: 16px;
+        background-image: url("../img/modal/close.svg");
+        background-size: contain;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.modal-message-1 {
+        &::before {
+            position: absolute;
+            display: block;
+            top: 30%;
+            left: 6%;
+            content: "";
+            width: 56px;
+            height: 56px;
+            background-image: url("../img/modal/people.svg");
+        }
+    }
+
+    &.modal-message-2 {
+        &::before {
+            position: absolute;
+            display: block;
+            top: 25%;
+            left: 6%;
+            content: "";
+            width: 56px;
+            height: 56px;
+            background-image: url("../img/modal/tel.svg");
+        }
+    }
+
+    &.modal-message-3 {
+        &::before {
+            position: absolute;
+            display: block;
+            top: 25%;
+            left: 6%;
+            content: "";
+            width: 56px;
+            height: 56px;
+            background-image: url("../img/modal/basket.svg");
+        }
+    }
+}

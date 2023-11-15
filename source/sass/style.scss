@@ -1,0 +1,12 @@
+@import "normalize", "fonts", "variables", "mixins", "global", "animation";
+
+// components
+
+@import "block/components/header.scss", "block/components/presentation.scss",
+        "block/components/result.scss", "block/components/ingridients.scss",
+        "block/components/footer.scss", "block/components/modal-form.scss",
+        "block/components/modal-message.scss";
+
+// subcomponents
+
+@import "block/subcomponents/card.scss", "block/subcomponents/modal-overlay.scss";

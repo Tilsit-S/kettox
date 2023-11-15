@@ -1,0 +1,58 @@
+@mixin breakpoint {
+    width: 1236px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media (max-width: 1300px) {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 764px) {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@mixin font-setting($size, $line-height, $font-width, $font-color) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $font-width;
+    color: $font-color;
+}
+
+@mixin second-title {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 42px;
+    text-align: center;
+
+    @media (max-width: $mobile-width) {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+@mixin description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    @media (max-width: $mobile-width) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
