@@ -6,6 +6,10 @@
     padding-bottom: 70px;
     z-index: 1;
 
+    @media (max-width: 450px) {
+        padding-bottom: 0;
+    }
+
     &__wrapper {
         position: relative;
         display: flex;
@@ -216,6 +220,11 @@
 
         @media (max-width: 764px) {
             margin: 0 auto;
+        }
+
+        @media (max-width: 450px) {
+            width: 110%;
+            left: -15px;
         }
 
         &__description {
