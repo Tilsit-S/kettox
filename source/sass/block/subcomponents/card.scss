@@ -4,8 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 383px;
     height: 599px;
-    padding: 0 15px;
+    padding: 0 50px;
+    margin: 0 auto;
     border-radius: 63px;
     border: 1px solid $pink-for-card;
     background: #FFF;
@@ -13,8 +15,21 @@
     z-index: 1;
 
     @media (max-width: 1300px) {
-        width: auto;
+        //width: auto;
         justify-content: space-between;
+    }
+
+    @media (max-width: 910px) {
+        width: 350px;
+    }
+
+    @media (max-width: 850px) {
+        width: 304px;
+    }
+
+    @media (max-width: 750px) {
+        width: 304px;
+        padding: 0 30px;
     }
 
     &::before {
